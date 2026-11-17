@@ -5,4 +5,4 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 plugins:
   - jekyll-remote-theme
 
-logo: Mint Pixel-Terminal C Logo.png
+logo: "https://castercodesite.github.io/caster.github.io/assets/images/Mint%20Pixel-Terminal%20C%20Logo.png"
