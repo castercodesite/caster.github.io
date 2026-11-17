@@ -5,4 +5,4 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 plugins:
   - jekyll-remote-theme
 
-logo: /assets/images/avatar.png
+logo: Mint Pixel-Terminal C Logo.png
