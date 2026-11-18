@@ -43,3 +43,8 @@ $meta-font-family: $headline-font-family;
   font-family: "Source Code Pro", monospace;
   font-style: normal;
 }
+
+body,
+body * {
+  font-style: normal !important;
+}
