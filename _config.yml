@@ -12,3 +12,14 @@ google_fonts:
     weights: "400,700"
   - name: "Source Sans Pro"
     weights: "400,700"
+
+category_archive_path: "/posts/#"
+date_format: "%Y-%m-%d"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: caster
