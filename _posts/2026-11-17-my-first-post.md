@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "My First Coding Post"
 category: Tech
 ---
