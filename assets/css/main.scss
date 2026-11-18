@@ -3,37 +3,38 @@
 @charset "utf-8";
 
 $base-font-family: "Source Sans Pro", sans-serif;
-$description-font-family: $base-font-family;
-$headline-font-family: "Source Code Pro", monospace;
+$description-font-family: "Titillium Web", sans-serif;
+$headline-font-family: Consolas, "Courier New", monospace;
 $title-font-family: $headline-font-family;
 $meta-font-family: $headline-font-family;
 
 @import "so-simple";
 
-body,
-.site-description,
-.entry-content,
-.entry-excerpt {
+body {
   font-family: $base-font-family;
 }
 
+.site-description,
+.entry-excerpt {
+  font-family: $description-font-family;
+}
+
 h1, h2, h3, h4, h5, h6,
-.site-title, .site-title a,
-.page-title, .entry-title, .entry-title a {
+.site-title,
+.site-title a,
+.page-title,
+.entry-title,
+.entry-title a {
   font-family: $headline-font-family;
   font-weight: 700;
 }
 
-.entry-meta,
 .taxonomy-index,
-.taxonomy-section {
+.taxonomy-title,
+.entry-meta {
   font-family: $meta-font-family;
 }
 
-body,
-body * {
-  font-style: normal !important;
-}
 body,
 body * {
   font-style: normal !important;
