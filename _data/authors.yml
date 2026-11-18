@@ -1,0 +1,7 @@
+caster:
+  name: "Caster"
+  picture: "/assets/images/Mint%20Pixel-Terminal%20C%20Logo.png"
+  links:
+    - title: "GitHub"
+      url: "https://github.com/castercodesite"
+      icon: "fab fa-github"
