@@ -1,0 +1,24 @@
+---
+---
+@charset "utf-8";
+
+$base-font-family: "Source Sans Pro", sans-serif;
+$description-font-family: $base-font-family;
+$headline-font-family: "Source Code Pro", monospace;
+$title-font-family: $headline-font-family;
+$meta-font-family: $headline-font-family;
+
+@import "so-simple";
+
+.site-title {
+  font-family: $headline-font-family;
+  font-weight: 700;
+}
+
+.site-description {
+  font-style: normal;
+}
+
+.entry-title {
+  font-style: normal;
+}
