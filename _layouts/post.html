@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<style>
+  .post-detail {
+    display: grid;
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 3rem;
+  }
+
+  .post-detail__sidebar {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font: 0.875rem/1.5 Consolas, "Courier New", monospace;
+  }
+
+  .post-detail__avatar {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto 0.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .post-detail__sidebar time {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .post-detail__categories {
+    margin-top: 1rem;
+  }
+
+  .post-detail__article {
+    min-width: 0;
+  }
+
+  .post-detail__title {
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #aaa;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  @media (min-width: 48rem) {
+    .post-detail {
+      grid-template-columns: 10rem minmax(0, 1fr);
+      gap: clamp(1.5rem, 4vw, 4rem);
+      align-items: start;
+    }
+  }
+</style>
+
+<main id="main" class="post-detail">
+  <aside class="post-detail__sidebar" aria-label="Post details">
+    <img class="post-detail__avatar" src="{{ site.logo | relative_url }}" alt="">
+    <div>Caster</div>
+    <a href="https://github.com/castercodesite">GitHub</a>
+
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </time>
+
+    {% if page.categories.size > 0 %}
+      <div class="post-detail__categories">
+        <small>CATEGORIES</small><br>
+        {% for category in page.categories %}
+          <a href="{{ '/posts/' | relative_url }}#{{ category | slugify }}">{{ category | escape }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </aside>
+
+  <article class="post-detail__article">
+    <h1 class="post-detail__title">{{ page.title | escape }}</h1>
+    <div class="post-detail__content">
+      {{ content }}
+    </div>
+  </article>
+</main>
