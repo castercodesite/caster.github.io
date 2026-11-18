@@ -8,7 +8,7 @@ plugins:
 logo: "https://castercodesite.github.io/caster.github.io/assets/images/Mint%20Pixel-Terminal%20C%20Logo.png"
 
 google_fonts:
-  - name: "Source Code Pro"
+  - name: "Titillium Web"
     weights: "400,700"
   - name: "Source Sans Pro"
     weights: "400,700"
