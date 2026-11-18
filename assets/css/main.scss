@@ -22,3 +22,24 @@ $meta-font-family: $headline-font-family;
 .entry-title {
   font-style: normal;
 }
+
+.site-title,
+.site-title a,
+.page-title,
+.entry-title,
+.entry-title a {
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.site-description {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+}
+
+.entry-meta,
+.entry-meta time {
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+}
