@@ -10,40 +10,30 @@ $meta-font-family: $headline-font-family;
 
 @import "so-simple";
 
-.site-title {
+body,
+.site-description,
+.entry-content,
+.entry-excerpt {
+  font-family: $base-font-family;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title, .site-title a,
+.page-title, .entry-title, .entry-title a {
   font-family: $headline-font-family;
   font-weight: 700;
 }
 
-.site-description {
-  font-style: normal;
-}
-
-.entry-title {
-  font-style: normal;
-}
-
-.site-title,
-.site-title a,
-.page-title,
-.entry-title,
-.entry-title a {
-  font-family: "Source Code Pro", monospace;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.site-description {
-  font-family: "Source Sans Pro", sans-serif;
-  font-style: normal;
-}
-
 .entry-meta,
-.entry-meta time {
-  font-family: "Source Code Pro", monospace;
-  font-style: normal;
+.taxonomy-index,
+.taxonomy-section {
+  font-family: $meta-font-family;
 }
 
+body,
+body * {
+  font-style: normal !important;
+}
 body,
 body * {
   font-style: normal !important;
